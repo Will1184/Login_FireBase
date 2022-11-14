@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/button_logOut"
+        android:layout_width="250dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#000000"
+        android:text="Log Out"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id"
+        app:rippleColor="#00FA2121" />
+
+    <Button
+        android:id="@+id/button_update_password"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FDFDFD"
+        android:text="Update Password"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/text_verified_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_update_email"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_update_email"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="250dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#05090909"
+        android:text="Update Email"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_logOut"
+        app:strokeColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="12dp"
+        android:hint="My Email Adress"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:hint="ID"
+        android:textColor="#C6C6C6"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_logOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_email" />
+
+    <TextView
+        android:id="@+id/text_verified_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="68dp"
+        android:text="Account Not Verified"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_update_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
